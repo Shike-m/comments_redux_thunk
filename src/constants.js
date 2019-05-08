@@ -1,0 +1,1 @@
+export const AMOUNT_DATA_TO_STORE = 'amount_data_to_store';
