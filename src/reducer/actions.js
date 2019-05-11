@@ -1,12 +1,14 @@
 import { AMOUNT_DATA_TO_STORE } from '../constants';
-import axios from 'axios';
 
 export const getComments = (dispatch) => {
-    fetch.get('./api/comments.json')
+    fetch('./api/comments.json')
         .then(res => {
-            console.log(res.data);
+            return res.json();
+        }).then(res => {
+            console.log(res);
             dispatch(AddComments(res.data));
         });
+ 
 };
 
 export const AddComments = data => ({
