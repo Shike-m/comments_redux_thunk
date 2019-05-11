@@ -7,7 +7,7 @@ const defaultValue = {
 const reducer = (state=defaultValue, action) => {
     switch (action.type) {
         case AMOUNT_DATA_TO_STORE:
-            return Object.assign({}, state, { comments:action.data.comments });
+            return Object.assign({}, state, { comments:action.data });
         default:
             return state;
     }

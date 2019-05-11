@@ -1,21 +1,25 @@
 {
-    "post":"Beautiful flowers in Spring",
-    "url": "./api/img/flower.jpg",
-    "comments":[{
-        "name":"Tom",
-        "comment":"It is nice"
-    },
-        {
-            "name":"John",
-            "comment":"Wonderful"
-        },
-        {
-            "name":"Mary",
-            "comment":"pretty"
-        },
-        {
-            "name":"Zhangsan",
-            "comment":"huge well"
-        }
-    ]
+    "success":true,
+    "data": {
+        "post": "Beautiful flowers in Spring",
+        "url": "./api/img/flower.jpg",
+        "comments": [
+            {
+                "name": "Tom",
+                "comment": "It is nice"
+            },
+            {
+                "name": "John",
+                "comment": "Wonderful"
+            },
+            {
+                "name": "Mary",
+                "comment": "pretty"
+            },
+            {
+                "name": "Zhangsan",
+                "comment": "huge well"
+            }
+        ]
+    }
 }
