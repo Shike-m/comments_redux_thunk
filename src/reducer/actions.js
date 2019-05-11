@@ -13,6 +13,8 @@ export const getComments = (dispatch) => {
 
 export const AddComments = data => ({
     type: AMOUNT_DATA_TO_STORE,
-    data
+    post: data.post,
+    url: data.url,
+    comments:data.comments
 })
 
