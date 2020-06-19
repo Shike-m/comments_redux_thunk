@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { getComments } from '../reducer/actions';
+import PropTypes from 'prop-types';
 
 class CommentList extends React.Component {
     componentDidMount() {
@@ -45,5 +46,10 @@ const mapToProps = dispatch => {
             dispatch(getComments);
         }
     }
+}
+CommentList.propTypes = {
+    post:PropTypes.string,
+    imgUrl:PropTypes.string,
+    comments:PropTypes.array
 }
 export default connect(mapToState, mapToProps)(CommentList);
